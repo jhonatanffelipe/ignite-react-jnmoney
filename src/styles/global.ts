@@ -3,15 +3,15 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #202024;
-    --red: #F75A68
+    --red: #F75A68;
 
-    --green-light: #00B37E
-    --black: #121214
+    --green-light: #00B37E;
+    --black: #121214;
 
-    --text-title: #E1E1E6
-    --text-body: #C4C4CC
+    --text-title: #E1E1E6;
+    --text-body: #C4C4CC;
 
-    --shape: #29292E
+    --shape: #29292E;
   }
   
   * {
@@ -34,6 +34,16 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
+
+  body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
+  }
+
 
   button {
     cursor: pointer;
